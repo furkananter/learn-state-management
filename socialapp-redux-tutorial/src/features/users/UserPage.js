@@ -22,8 +22,8 @@ const UserPage = ({ match }) => {
 
   return (
     <section>
-      <h2>{user.name}</h2>
-      <ul>{renderedUsers}</ul>
+      <h2>{user.name}</h2>c
+      <ul>{postTitles}</ul>
     </section>
   )
 }

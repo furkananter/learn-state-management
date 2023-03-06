@@ -11,8 +11,8 @@ import AddNewForm from './features/posts/AddNewForm'
 import EditPostForm from './features/posts/EditPostForm'
 import { PostsList } from './features/posts/PostsList'
 import SinglePostPage from './features/posts/SinglePostPage'
-import UsersList from './features/users/UsersList'
-import UserPage from './features/users/UserPage'
+import { UsersList } from './features/users/UsersList'
+import { UserPage } from './features/users/UserPage'
 
 function App() {
   return (

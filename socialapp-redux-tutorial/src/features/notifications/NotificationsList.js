@@ -30,7 +30,7 @@ export const NotificationsList = () => {
     return (
       <div key={notification.id} className={notificationClassname}>
         <div>
-          <b>{user.name}</b>
+          ¨<b>{user.name}</b>
           {notification.message}
         </div>
         <div title={notification.date}>

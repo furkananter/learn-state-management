@@ -1,7 +1,11 @@
 import reactLogo from './assets/react.svg';
 import './App.css';
 import { useAppDispatch, useAppSelector } from './app/hooks';
-import { incremented } from './features/counter/counterSlice';
+import {
+  incremented,
+  decremented,
+  amountAdded,
+} from './features/counter/counterSlice';
 
 function App() {
   const count = useAppSelector((state) => state.counter.value);
@@ -19,7 +23,15 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button>count is {count}</button>
+        <button onClick={() => dispatch(incremented())}>
+          increment {count}
+        </button>
+        <button onClick={() => dispatch(decremented())}>
+          decrement {count}
+        </button>
+        <button onClick={() => dispatch(amountAdded(5))}>
+          add an amount {count} 
+        </button>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>

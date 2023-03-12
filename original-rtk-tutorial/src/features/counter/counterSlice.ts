@@ -1,5 +1,10 @@
 // ducks pattern
 
+// createSlice ve PayloadAction'u reduxjs/toolkit paketinden alıyoruz
+// createSlice: bir reducer ve action'ı oluşturur
+// PayloadAction: bir action'ın payload'ı için bir tip belirler
+//
+
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 
 export interface CounterState {

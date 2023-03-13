@@ -1,13 +1,15 @@
 import { configureStore } from '@reduxjs/toolkit';
-import authReducer from '../features/user/authSlice';
+import authReducer from '../features/auth/authSlice';
+import todoReducer from '../features/todo/todoSlice';
+import languageReducer from '../features/i18n/languageSlice';
 
 
 const store = configureStore({
   reducer: {
     auth: authReducer,
-    // todos: todosReducer,
-    // user: userReducer,
-    // language: languageReducer,
+    todo: todoReducer,
+    language: languageReducer,
+
   },
 });
 

@@ -1,7 +1,7 @@
 interface Todo {
-  
-  id: string | null;
-  title: string | null;
+
+  id: number | null;
+  content: string | null;
   completed: boolean | null;
 }
 interface User {

@@ -18,6 +18,7 @@ const Login: React.FC = () => {
     <div>
       Login
       <button
+        disabled={user.user ? true : false}
         onClick={() => {
           handleLogin(1, 'test');
         }}
@@ -25,19 +26,12 @@ const Login: React.FC = () => {
         Test olarak giriş yap
       </button>
       <button
+        disabled={user.user ? true : false}
         onClick={() => {
           handleLogin(2, 'test2');
         }}
       >
         Test2 olarak giriş yap
-      </button>
-      <button
-        onClick={() => {
-          dispatch(logout());
-          console.log(user, 'çıkış yapıldı');
-        }}
-      >
-        Çıkış yap
       </button>
       <div>
         {user.user ? (

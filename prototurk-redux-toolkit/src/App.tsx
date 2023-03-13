@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import Header from './features/user/Header';
+import AddTodo from './features/todo/add';
 import type { User, Todo } from './app/type';
+import Login from './features/user/auth';
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -10,9 +11,8 @@ function App() {
 
   return (
     <main className="App">
-      <Header user={user} setUser={setUser} />
-      <AddTodo user={user} />
-      <TodoList todos={todos} user={user} />
+      <Login />
+      <AddTodo />
     </main>
   );
 }
